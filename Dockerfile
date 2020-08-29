@@ -21,6 +21,7 @@ RUN apt-get update && \
     python3-pip \
     ssh \ 
     thefuck \
+    fish \ 
     tmux \ 
     valgrind \ 
 
@@ -34,8 +35,8 @@ RUN apt-get update && \
 
 
 # Build OpenCV 
-RUN git clone https://github.com/opencv/opencv.git && \ 
-    cd ~/opencv && \
+RUN cd ~ && git clone https://github.com/opencv/opencv.git && \ 
+    cd opencv && \
     mkdir build && \ 
     cd build && \
     cmake -DCMAKE_BUILD_TYPE=Release .. && \
