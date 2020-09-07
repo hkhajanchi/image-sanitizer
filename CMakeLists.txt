@@ -16,7 +16,7 @@ SET (src "/hack/src/main.cpp")
 include_directories( ${OPENCV_INCLUDE_DIRS})
 
 # build executable
-add_executable (sanitize ${src}})
+add_executable (sanitize ${src})
 
 # add necessary OpenCV dynamic libs and add to executable
 find_library (core      NAMES opencv_core      ${OPENCV_LIBS})
