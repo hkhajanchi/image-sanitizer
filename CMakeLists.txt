@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.0.0)
 project (image_sanitizer)
 
 # Compiler settings 
-SET (CMAKE_CXX_COMPILER "clang++-10")
-SET (CMAKE_CXX_FLAGS "-O3 -g")
+SET (CMAKE_CXX_COMPILER "g++")
+SET (CMAKE_CXX_FLAGS "-O3 -std=c++17 -pthread")
 
 #paths and shit - this is specific to the CV build in my docker container
 SET (OPENCV_INCLUDE_DIRS "/usr/local/include/opencv4" )
