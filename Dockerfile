@@ -43,6 +43,9 @@ RUN cd ~ && git clone https://github.com/opencv/opencv.git && \
     make -j12 && \ 
     make install 
 
+# update dynamic load path
+ENV LD_LIBRARY_PATH="/usr/local/lib" 
+
 # Python stuff
 RUN pip3 install -U numpy 
 
