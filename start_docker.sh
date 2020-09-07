@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker run -v $PWD:/hack --workdir /hack -it hussain/threading-hack
+docker run -v $PWD:/hack --workdir /hack -it hussain/dev
